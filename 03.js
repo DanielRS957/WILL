@@ -11,10 +11,17 @@ function buscarAmigo(amigos, nombre) {
   // Debe devolver el objeto cuya propiedad 'nombre' coincida con el string 'nombre' recibido por argumento.
   // Ej:
   //  var amigos = [{ nombre: 'toni', edad: 33 } , { nombre: 'Emi', edad: 25 }];
+
   //  buscarAmigo(amigos, 'toni') debe devolver { nombre: 'toni', edad: 33 };
 
   // Tu código aca:
-  
+var objetoCoisidencias={};
+for(var i=0; i< amigos.length;i++){
+  if(amigos[i].nombre=== nombre){
+    objetoCoisidencias= amigos[i]
+  }
+}
+return objetoCoisidencias;
 }
 
 // No modifiques nada debajo de esta linea //
